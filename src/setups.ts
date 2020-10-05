@@ -29,7 +29,7 @@ const setups: any = {
     out: {
       fix: false,
       gain: 99,
-      price: 'null', //maior parte das perdas é no stop inicial
+      price: 'null',
       conditions: [['ma21', '<', 'odbma21']],
     },
   },
