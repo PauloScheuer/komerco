@@ -1,5 +1,3 @@
-//encontrar uma maneira de tirar ouliers
-
 import { Request, Response } from 'express';
 import knex from '../database/connection';
 import api from '../services/api';
