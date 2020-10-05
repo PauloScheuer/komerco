@@ -1,0 +1,29 @@
+{
+  "name": "komerco",
+  "version": "1.0.4",
+  "description": "A api to see data from the brazilian stocks.",
+  "author": {
+    "name": "Paulo Roberto Scheuer Gomes"
+  },
+  "scripts": {
+    "start": "nodemon src/index.ts",
+    "db": "knex migrate:latest --knexfile knexfile.ts",
+    "db-rb": "knex migrate:rollback",
+    "db-sd": "knex --knexfile knexfile.ts seed:run"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.7",
+    "@types/node": "^14.0.5",
+    "nodemon": "^2.0.4",
+    "ts-node": "^8.1.0",
+    "typescript": "^3.4.4"
+  },
+  "dependencies": {
+    "@types/knex": "^0.16.1",
+    "axios": "^0.19.2",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "knex": "^0.21.4",
+    "sqlite3": "^5.0.0"
+  }
+}
